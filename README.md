@@ -1,4 +1,4 @@
-# The effects of the Covid-19 pandemic and BMI on the average daily burned calories of students
+# The effects of the Covid-19 pandemic and BMI on the average daily burned calories of students: Data analysis
 The goal of this project is to analyse the data captured by a fitness tracker. The following question can be answered with this data analysis:
 _What is the difference in change in amount of physical activity, measured by average daily burned calories, due to the Covid-19 pandemic between students of different BMI?_
 This project is performed for the course ME41125: Introduction To Engineering Research at the TU Delft.
