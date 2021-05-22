@@ -16,11 +16,14 @@ import statsmodels.api as sm
 from statsmodels.formula.api import ols
 from statsmodels.stats.power import tt_ind_solve_power
 import seaborn as sns
+from scipy import stats
+
 
 
 #&& Load data
 data = np.zeros((193,103))
-with open('IER_data.csv', mode='r') as infile:
+filename = 'IER_data.csv'#Change the filename here
+with open(filename, mode='r') as infile: 
     reader = csv.reader(infile)
     data = np.array(list(reader))
 
@@ -290,7 +293,6 @@ effect_size= tt_ind_solve_power(effect_size=0.3, nobs1 = None, alpha=0.05, power
 print(effect_size)
 
 #%% Analysis of the model
-from scipy import stats
 
 def abline(slope, intercept):
      """Plot a line from slope and intercept, borrowed from https://stackoverflow.com/questions/7941226/how-to-add-line-based-on-slope-and-intercept-in-matplotlib"""
